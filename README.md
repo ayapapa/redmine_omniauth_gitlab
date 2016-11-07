@@ -24,13 +24,20 @@ Restart the redmine
 
 To authenticate via gitlab you must first register your redmine instance via your gitlab
 
+* Go to your profile setting area.
+* Click "Applications"
+* Type a "Name" for the application, e.g. "My Redmine"
+* Enter "https://mydomain.com/redmine/oauth2callback" as "Redirect URI", where "mydomain.com/redmine" is the domain / path for your redmine instance. *** The plugin will not work without this setting ***
+* Click "Save application"
+* Save the "Application ID" and "Secret" for the configuration of the Redmine plugin (see below)
+
 ### Configuration
 
 * Login as a user with administrative privileges. 
 * In top menu select "Administration".
 * Click "Plugins"
 * In plugins list, click "Configure" in the row for "Redmine Omniauth gitlab plugin"
-* Enter the Сlient ID & Client Secret shown when you registered your application via gitlab Cloud Console.
+* Enter "Application ID"  & "Secret" shown when you registered your application via gitlab as Сlient ID & Client Secret.
 * Check the box near "Oauth authentication"
 * Click Apply. 
  
